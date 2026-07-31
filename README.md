@@ -1,6 +1,16 @@
 # Hi, I'm Matthew Flood
 
-Software engineer working across **data engineering**, **backend services**, and **iOS**.
+Staff-level software engineer building **AI systems**, **data platforms**, and
+backend services in Python. I care about agents that can be inspected, claims
+that can be falsified, and evaluations that are harder to game than a polished
+demo.
+
+## Featured: AI engineering
+
+| Project | What it is |
+|---|---|
+| [glasshouse](https://github.com/mflood/glasshouse) | RAG attribution by ablation: remove retrieved evidence and measure which sentences stop surviving. FastAPI streams live model runs into a vanilla-JS evidence lab; bounded coalition search catches duplicated evidence that ordinary leave-one-out misses. Ships with a no-key recorded demo, 137 tests, and independently reproducible evaluation (**15/15** document-deletion checks) |
+| [envforge](https://github.com/mflood/envforge) | Encrypted environment manager built around SOPS and age. Atomic deployment, drift checks, recipient rotation, git-ignore auditing, and a fake encryption backend that keeps the security-critical workflow testable |
 
 ## Data engineering
 
@@ -28,7 +38,7 @@ Software engineer working across **data engineering**, **backend services**, and
 
 Every project above except `whimsical` runs its tests in CI on each push.
 
-## Currently building
+## Elsewhere in the workshop
 
 - AI-powered personal agents for email triage, calendar management, and task tracking (Python, Claude API)
 - An iOS language-learning app with a Whisper-based audio content pipeline (Swift, Python)
