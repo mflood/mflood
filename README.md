@@ -9,7 +9,7 @@ demo.
 
 | Project | What it is |
 |---|---|
-| [glasshouse](https://github.com/mflood/glasshouse) | RAG attribution by ablation: remove retrieved evidence and measure which sentences stop surviving. FastAPI streams live model runs into a vanilla-JS evidence lab; bounded coalition search catches duplicated evidence that ordinary leave-one-out misses. Ships with a no-key recorded demo, 137 tests, and independently reproducible evaluation (**15/15** document-deletion checks) |
+| [glasshouse](https://github.com/mflood/glasshouse) | RAG attribution by ablation: remove retrieved evidence and measure which sentences stop surviving. FastAPI streams live model runs into a vanilla-JS evidence lab; bounded coalition search catches duplicated evidence that ordinary leave-one-out misses. Ships with a no-key recorded demo, 140 tests, and independently reproducible evaluation (**14/14** document-deletion checks) |
 | [envforge](https://github.com/mflood/envforge) | Encrypted environment manager built around SOPS and age. Atomic deployment, drift checks, recipient rotation, git-ignore auditing, and a fake encryption backend that keeps the security-critical workflow testable |
 
 ## Data engineering
