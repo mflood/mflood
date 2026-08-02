@@ -35,7 +35,15 @@ the state, beliefs, decisions, and interactions behind autonomous characters.
 
 | Project | What it is |
 |---|---|
-| [rudecgi](https://github.com/mflood/rudecgi) | C++ library that parses form data, cookies, `PATH_INFO` and multipart uploads into one collection you query by field name. First released in 2000; modernized in 2026 with a CMake build, C++17, contract tests and CI — [docs](http://mflood.github.io/rudecgi/) |
+| [rudecgi](https://github.com/mflood/rudecgi) | C++ request library that parses query strings, POST bodies, cookies, `PATH_INFO`, repeated fields, and multipart uploads into one collection you query by field name — [docs](http://mflood.github.io/rudecgi/) |
+| [rudesocket](https://github.com/mflood/rudesocket) | C++ TCP client that wraps BSD sockets and WinSock behind one interface for connections, timeouts, line-oriented reads, TLS certificate verification, and chained SOCKS or HTTP proxies |
+| [rudesmtp](https://github.com/mflood/rudesmtp) | C++ SMTP client built on RudeSocket. Exposes the mail conversation directly, including response codes that let callers distinguish temporary failures worth retrying from permanent failures |
+| [rudeconfig](https://github.com/mflood/rudeconfig) | C++ `.ini` reader and writer that preserves comments, blank lines, ordering, and inline notes through load-modify-save round trips, keeping human-edited configuration files human-shaped |
+| [rudedatabase](https://github.com/mflood/rudedatabase) | C++ interface for working with MySQL databases |
+| [rudesession](https://github.com/mflood/rudesession) | C++ web-server session library |
+| [rudewebplatform](https://github.com/mflood/rudewebplatform) | C++ web application framework used by RudeServer |
+| [rudeserver](https://github.com/mflood/rudeserver) | C++ CGI application framework that brings the Rude web libraries together |
+| [rudeshipping](https://github.com/mflood/rudeshipping) | C++ interface for shipping services such as UPS |
 | [mail_forward_flask_app](https://github.com/mflood/mail_forward_flask_app) | Flask email-forwarding service with a pluggable provider layer (Mailgun/Mandrill), mocked provider tests, and Docker deployment |
 | [s3_music_player](https://github.com/mflood/s3_music_player) | Finds the music buried in your S3 buckets and plays it. Paginated scanner, CLI that emits M3U or JSON, and a Qt player whose playback logic sits behind an audio-backend protocol so it can be tested without a sound card |
 
@@ -46,8 +54,6 @@ the state, beliefs, decisions, and interactions behind autonomous characters.
 | [mahjong](https://github.com/mflood/mahjong) | Hand solver for Chinese/Hong Kong mahjong — is this a winning hand, and what would complete it. Decomposes on tile counts rather than tile lists; a curses table keeps the analysis live as you draw. No dependencies |
 | [pizza_flow](https://github.com/mflood/pizza_flow) | Works out who should eat which pizza by reducing the question to maximum flow. Edmonds–Karp with residual edges, which is what lets it undo an earlier choice in order to feed someone who eats only one thing |
 | [whimsical](https://github.com/mflood/whimsical) | Small programs that were fun to write: a sudoku solver, an O(N) anagram checker, Codenames tooling, Advent of Code, and friends. A playground, not a portfolio piece |
-
-Every project above except `whimsical` runs its tests in CI on each push.
 
 ## Elsewhere in the workshop
 
