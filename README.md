@@ -1,15 +1,26 @@
 # Hi, I'm Matthew Flood
 
-Staff-level software engineer building **AI systems**, **data platforms**, and
-backend services in Python. I care about agents that can be inspected, claims
-that can be falsified, and evaluations that are harder to game than a polished
-demo.
+Staff-level software engineer building **agentic AI systems**,
+**multi-agent simulations**, **data platforms**, and backend services in Python.
+I care about agents with explicit state, claims that can be falsified, and
+evaluations that test behavior rather than reward a polished demo.
 
 ## Featured: AI engineering
 
 | Project | What it is |
 |---|---|
 | [glasshouse](https://github.com/mflood/glasshouse) | RAG attribution by ablation: remove retrieved evidence and measure which sentences stop surviving. FastAPI streams live model runs into a vanilla-JS evidence lab; bounded coalition search catches duplicated evidence that ordinary leave-one-out misses. Ships with a no-key recorded demo, 140 tests, and independently reproducible evaluation (**14/14** document-deletion checks) |
+| [rumor-mill-ai](https://github.com/mflood/rumor-mill-ai) | Building an open-source laboratory for persistent, belief-driven AI characters. The architecture separates objective canon, private agent beliefs, and visitor-facing presentation; versioned worlds, a deterministic fourteen-day smoke simulation, FastAPI, and Postgres provide the reproducible foundation for memory, autonomous scenes, rumor propagation, and behavioral evaluation |
+
+These projects explore the same engineering question from two directions:
+**How do we make generative AI behavior observable, falsifiable, and testable?**
+Glasshouse evaluates the evidence behind generated claims; Rumor Mill evaluates
+the state, beliefs, decisions, and interactions behind autonomous characters.
+
+## Platform engineering
+
+| Project | What it is |
+|---|---|
 | [envforge](https://github.com/mflood/envforge) | Encrypted environment manager built around SOPS and age. Atomic deployment, drift checks, recipient rotation, git-ignore auditing, and a fake encryption backend that keeps the security-critical workflow testable |
 
 ## Data engineering
@@ -40,7 +51,8 @@ Every project above except `whimsical` runs its tests in CI on each push.
 
 ## Elsewhere in the workshop
 
-- AI-powered personal agents for email triage, calendar management, and task tracking (Python, Claude API)
+- Operational AI agents for email triage, calendar management, and task tracking,
+  with persistent state, human approval boundaries, and auditable actions
 - An iOS language-learning app with a Whisper-based audio content pipeline (Swift, Python)
 
 These are private while under active development — happy to walk through them in conversation.
